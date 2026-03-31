@@ -1,0 +1,88 @@
+# =============================================
+# CREDENCIAIS E CONFIGURAÇÕES SENSÍVEIS
+# =============================================
+
+# Arquivo com credenciais do banco de dados
+CONFIG/Config.php
+
+# Arquivos de texto com informações sensíveis
+CONFIG/configuracoes.txt
+DB/banco.txt
+DB/chaves recaptcha.txt
+DB/chaves*.txt
+
+# =============================================
+# BANCO DE DADOS
+# =============================================
+
+# Dumps e cópias do banco (contém dados reais)
+DB/*.sql
+DB/Copia*
+
+# =============================================
+# DEPENDÊNCIAS
+# =============================================
+
+# Composer - gerado via `composer install`
+vendor/
+
+# =============================================
+# UPLOADS DE USUÁRIOS
+# =============================================
+
+# Imagens enviadas por usuários do sistema
+PUBLIC/img/uploads/
+PUBLIC/uploads/
+
+# =============================================
+# ARQUIVOS DE INSTRUÇÃO / RASCUNHO
+# =============================================
+
+CONTROLLER/intrucoes.txt
+MODEL/instrucoes.txt
+VIEW/adm/instrucoes.txt
+VIEW/vend/instrucoes.txt
+PUBLIC/css/instruções.txt
+PUBLIC/img/instruções.txt
+VIEW/pop-up/informações.txt
+IMPORTANTE_LER.txt
+CONFIG/test.txt
+
+# =============================================
+# SISTEMA OPERACIONAL
+# =============================================
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# =============================================
+# EDITORES E IDEs
+# =============================================
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# PhpStorm / JetBrains
+.idea/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# =============================================
+# LOGS E CACHE
+# =============================================
+
+*.log
+*.cache
+/tmp/

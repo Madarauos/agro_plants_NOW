@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.ym_area-titulo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ym_titulo-input{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.ym_input-area{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.ym_form-pop-up{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    min-width: 25vw;
+    justify-content: space-around;
+    grid-template-columns: auto auto;
+}
+
+.ym_area-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 15%;
+    height: 1vh;
+    width: 10vw;
+}
+
+.ym_btn-remover{
+    max-width: 25%;
+    gap: 10px;
+}
+
+.ym_icon-delete{
+    margin-top: 2px;
+    font-size: 13px;
+}
+
+.ym_btn-padrao{
+    max-width: 25%;
+}
+
+
+#btn-sim{
+    width: 100px;
+    
+
+}
+
+#btn-nao{
+    width: 100px;
+    background-color: rgb(234, 36, 36);
+
+}
+
+#btn-nao:hover{
+    background-color: rgb(231, 42, 42);
+
+}
+
+#btn-cancelar-senha{
+    background: rgb(234, 36, 36);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    min-width: 180px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btn-confimar-senha{
+    min-width: 180px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.eze-button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+
+#confirm-step h3 {
+  font-size: 15px;         
+  font-weight: 600;        
+  margin-bottom: 12px;     
+  line-height: 1.3;        
+}
+
+#confirm-step p {
+  font-size: 13px;         
+  color: #555;             
+  margin-bottom: 20px;     
+  line-height: 1.4;        
+}
+
+#btn-sim, 
+#btn-nao {
+  width: 20px;            
+  padding: 6px 12px;      
+  font-size: 13px;        
+  border: none;
+  border-radius: 6px;     
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+#password-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 16px;
+  text-align: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#password-step h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+#password-step p {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.ym_input-padrao {
+  width: 200px;          
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.ym_input-padrao:focus {
+  border-color: #45734B;
+}
+
+
+#btn-confirmar,
+#btn-cancelar-senha {
+  min-width: 90px;
+  padding: 6px 12px;
+  font-size: 13px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+
+#btn-cancelar-senha {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.ym_input-padrao{
+    height: 40px;
+}

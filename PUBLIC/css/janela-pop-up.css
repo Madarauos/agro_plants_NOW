@@ -1,0 +1,50 @@
+.ym_popup-overlay{
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    overflow: hidden;
+    position: fixed;
+    background-color: transparent;
+    backdrop-filter: blur(1.5px);
+    background-color: rgba(0, 0, 0, 0.696);
+}
+
+.ym_popup-content{
+    display: none;
+    overflow: hidden;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: auto;
+    max-height: 90%;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 1px 1px 3px 1px rgba(255, 255, 255, 0.127);
+  }
+
+.ym_superior-popup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ym_titulo-popup{
+    width: 95%;
+    font-size: 1.4rem;
+}
+
+.ym_icon-fechar{
+    overflow: hidden;
+    position: absolute;
+    top: 10px; right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.ym_conteudo-popup{
+    padding: 15px;
+}

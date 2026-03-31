@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Bytesized&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tektur:wght@400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+}
+
+.ym_area-pop-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 40vw;
+}
+
+
+.ym_area-esquerda{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    width: 50%;
+    color: black;
+}
+
+.ym_area-direita{
+    padding: 20px;
+    padding-left: 35px;
+    border-left: 2px solid #0000001A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    gap: 10px;
+    color: black;
+}
+
+.ym_area-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.ym_titulo-input{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.ym_input{
+    border-radius: 4px;
+    padding: 2px;
+    border: 1px solid #E7E6E6;
+}
+
+
+.ym_btn-pop-up{
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    height: 11%;
+    width: 28%;
+}
+
+.ym_texto-pop-up{
+    font-size: 11px;
+    color: #000000B2;
+    font-weight: 600;
+}
+
+.ym_mobile-input{
+    display: none;
+}
+
+@media screen and (max-width: 1024px){
+
+.ym_area-pop-up{
+    height: 60%;
+    max-height: 300px;
+    width: 55%;
+}
+
+.ym_area-direita{
+    padding: 0;
+}
+
+.ym_input-comissao{
+    display: none;
+}
+
+.ym_mobile-input{
+    display: flex;
+}
+
+.ym_texto-pop-up{
+    font-size: 9.3px;
+    width: 90%;
+}
+
+}
+
+@media screen and (max-width: 768px){
+
+    .ym_area-pop-up{
+        height: 60%;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .ym_area-pop-up{
+        height: 60%;
+        width: 95%;
+    }
+}

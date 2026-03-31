@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* CSS de padronização de elementos do projeto*/
+@import url(btn-notificacao.css);
+@import url(tabela.css);
+@import url(select.css);
+@import url(janela-pop-up.css);
+@import url(alertas.css);
+
+*{
+    font-family: Poppins;
+}
+
+.ym_btn-padrao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #45734b;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 20px;
+    color: white;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.127);
+    cursor: pointer;
+}
+
+.ym_btn-remover{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 0, 0, 0.74);
+  border: none;
+  border-radius: 6px;
+  padding: 8px 20px;
+  color: white;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.127);
+  cursor: pointer;
+}
+
+.ym_input-padrao{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    border: 2px solid rgb(209, 209  , 209);
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.127);
+}
+
+
+
+.ym_titulo{
+    color: rgba(0, 0, 0, 0.90);
+    font-size: 2rem;
+    border-left: 10px solid #45734B;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.ym_input-form{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid rgba(0, 0, 0, 0.137);
+    padding: 1.5% 1px;
+    width: 100%;
+    border-radius: 2.5px;
+}
+
+
+
+
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .ym_titulo {
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    .ym_titulo {
+        margin-top: 10%;
+        font-size: 2rem;
+        border-left-width: 9px;
+    }
+
+    .ym_btn-padrao {
+        padding: 0.5rem 1rem;
+        font-size: 0.95rem;
+    }
+
+    .ym_input-padrao {
+        font-size: 0.95rem;
+        padding: 0.55rem;
+    }
+    
+    .ym_popup-content{
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .ym_titulo {
+        font-size: 1.6rem;
+        border-left-width: 7px;
+    }
+
+    .ym_btn-padrao {
+        font-size: 1rem;
+    }
+
+    .ym_input-padrao {
+        font-size: 1rem;
+        padding: 0.62rem;
+    }
+}

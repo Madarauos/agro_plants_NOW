@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, system-ui, -apple-system, sans-serif;
+}
+
+
+body {
+    background-color: #f5f5f5;
+}
+
+
+
+.jp_logo img {
+    max-width: 100%;
+    height: auto;
+    width: 80px;
+}
+
+
+
+/* Hamburger Menu Styles */
+
+.jp_hamburger-menu {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 30px;
+    height: 32px;
+    cursor: pointer;
+    z-index: 1000;
+    padding: 10px;
+}
+
+
+
+.jp_hamburger-line {
+    width: 100%;
+    height: 1.7px;
+    background-color: #2d2d2d;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+
+
+/* Hamburger Animation Classes */
+
+
+.jp_hamburger-menu.active .jp_hamburger-line:nth-child(1) {
+    transform: rotate(-50deg) translate(-1px, 2px);
+    background-color: #ffffff;
+}
+
+.jp_hamburger-menu.active .jp_hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.jp_hamburger-menu.active .jp_hamburger-line:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+    background-color: #ffffff;
+}
+
+
+
+/* Layout */
+
+
+.jp_container {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+/* sidebar */
+
+.jp_sidebar {
+    width: 250px;
+    background-color: #2d2d2d;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    transition: transform 0.3s ease;
+}
+
+.jp_logo {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.jp_sidebar nav ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.jp_sidebar nav ul li {
+    padding: 12px 15px;
+    margin: 5px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.jp_sidebar nav ul li:hover,
+.jp_sidebar nav ul li.jp_active {
+    background-color: #3a3a3a;
+}
+
+.jp_sidebar nav ul li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    filter: invert(1);
+}
+
+.jp_bottom-menu {
+    margin-top: auto;
+    border-top: 1px solid #3a3a3a;
+    padding-top: 20px;
+}
+
+.jp_bottom-menu ul {
+    list-style: none;
+}
+
+.jp_bottom-menu ul li {
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.jp_bottom-menu ul li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    filter: invert(1);
+}
+
+/* fim do menu */
+
+
+
+.jp_main-content {
+    flex: 1;
+    margin-left: 250px;
+    padding: 30px;
+}
+
+
+/* * Responsive Styles */ 
+
+@media screen and (max-width: 1024px) {
+    .jp_hamburger-menu {
+        display: block;
+    }
+
+    .jp_sidebar {
+        transform: translateX(-100%);
+        z-index: 999;
+    }
+
+    .jp_sidebar.active {
+        transform: translateX(0);
+    }
+
+    .jp_main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .jp_overlay.active {
+        display: block;
+    }
+
+    .jp_profile-header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .jp_info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .jp_main-content {
+        padding: 15px;
+    }
+
+    .jp_profile-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .jp_role {
+        width: 100%;
+        text-align: center;
+    }
+}

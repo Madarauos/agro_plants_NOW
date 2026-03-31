@@ -1,0 +1,43 @@
+.ym_area-alertas{
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 1100;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+ 
+.ym_alerta {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-left: 4px solid var(--primary-color);
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 0.3s;
+  max-width: 300px;
+  color: black;
+}
+ 
+.ym_alerta.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+ 
+.ym_alerta.sucesso {
+  border-left: 4px solid #0cd205;
+  background-color: #ebffea;
+
+}
+ 
+.ym_alerta.error {
+  border-left: 4px solid #ef4444;
+  background-color: rgb(255, 224, 224);
+}
+ 
+.ym_alerta.info {
+  border-left: 4px solid #4466ef;
+}

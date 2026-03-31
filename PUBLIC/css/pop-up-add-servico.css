@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.eze-container {
+    width: 700px;
+    height: 460px;
+    border-radius: 10px;
+}
+
+.eze-tab-header {
+    display: flex;
+    width: 100%;
+}
+
+.eze-tab-button {
+    flex: 1;
+    padding: 15px 0;
+    background-color: #e0e0e0;
+    border: none;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eze-tab-button:first-child {
+    border-radius: 10px 0 10px 0;
+}
+
+.eze-tab-button:last-child {
+    border-radius: 0 10px 0 10px;
+}
+
+.eze-tab-button.eze-active {
+    background-color: #fff;
+}
+
+.eze-form-section {
+    padding: 30px;
+    height: 408px;
+    position: relative;
+}
+
+.eze-form-row {
+    display: flex;
+    gap: 90px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.eze-form-group {
+    flex: 1;
+    position: relative;
+}
+
+.eze-form-label-group {
+    display: flex;
+    align-items: center;
+    margin-left: 13px;
+}
+
+.eze-required {
+    color: #ff5252;
+    font-size: 13px;
+    margin-right: 3px;
+}
+
+.eze-label-text {
+    font-size: 9px;
+    color: #0000007A;
+}
+
+.eze-form-control {
+    width: 95%;
+    height: 40px;
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 13px;
+    gap: 100px;
+    margin-left: 5px;
+}
+
+.eze-image-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #e0e0e0;
+    border-radius: 8px;
+    height: 270px;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #00000033;
+}
+
+#imagem-content .eze-image-placeholder {
+    width: 433px;
+    height: 283px;
+    margin: 17px auto;
+}
+
+.eze-placeholder-icon {
+    width: 50px;
+    height: 50px;
+    opacity: 0.3;
+    margin-bottom: 10px;
+    color: #0000007A;
+}
+
+.eze-button-container {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imagem-content .eze-button-container {
+    position: static;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.eze-button-container2 {
+    margin-right: 45px;
+}
+
+.eze-add-button {
+    background-color: #45734b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    min-width: 170px;
+    margin-top: -3px;
+}
+
+.eze-help-text {
+    text-align: center;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 5px;
+}
+
+#imagem-content {
+    display: none;
+}
+
+.eze-form-control2 {
+    width: 41.2%;
+}
+
+@media (max-width: 768px) {
+    .eze-container {
+        width: 90%;
+        margin: 20px;
+        height: 432px;
+    }
+
+    .eze-form-row {
+        flex-direction: column;
+        gap: 5px; 
+        margin-top: 10px;
+        
+    }
+
+    .eze-button-container {
+        position: static;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #imagem-content .eze-image-placeholder {
+        height: 255px;
+        width: 410px;
+    }
+
+    .eze-form-control2 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 551px) {
+    #imagem-content .eze-image-placeholder {
+        height: 260px;
+        width: 295px;
+    }
+    .eze-tab-button {
+        font-size: 15px;
+    }
+
+
+}
+
+@media (max-width: 394px) {
+    #imagem-content .eze-image-placeholder {
+        height: 265px;
+        width: 245px;
+    }
+    .eze-tab-button {
+        font-size: 13px;
+    }
+  
+    #imagem-content .eze_button-container {
+        margin-top: 20px;
+    }
+  
+    .eze_add-button {
+        width: 40%;
+        font-size: 14px;
+        padding: 10px;
+    }
+  
+
+}
+  
+  
+
+
+
+
+@media (max-width: 1400px) {
+    .eze_container {
+      width: 90%;
+    }
+  
+    .eze_form-row {
+      gap: 50px;
+    }
+  
+    .eze_form-control {
+      width: 100%;
+    }
+
+    .eze_form-control2 {
+        width: 48%;
+    }
+  
+    #imagem-content .eze_image-placeholder {
+      width: 50%;
+    }
+}
+  

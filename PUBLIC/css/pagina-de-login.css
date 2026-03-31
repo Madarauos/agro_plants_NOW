@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --color-primary-1: #FFFFFF; 
+    --color-primary-2: #F0EEEE; /*COR DO FUNDO DA TELA */
+    --color-primary-3: #EFEFEF; /*COR DOS OBJ DEPOIS DO FUNDO */
+    --color-primary-4: #F6F6F6; /*DOCK */
+    --color-primary-5: #E7E6E6; /*Stroke */
+    --color-primary-6: #45734B; /* Background Buttons */
+    --color-primary-7: #008F9F; /* cor hover palavras */
+    --color-primary-8:  rgba(0,0,0, 0.5); /* Cor texto e icones*/
+
+    --color-status-1: #30AB46;
+    --color-status-2: #FF0000;
+    /* Usar apenas nas paginas de Relatório as cores de "status"*/
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins";
+    background-color: var(--color-primary-2);
+    overflow: hidden;
+}
+
+h2{
+    font-weight: 900;
+}
+
+.jc_login-section {
+    display: flex;
+    height: 100vh;
+    background-image: url(../img/img_login.png);
+    background-color: #F0EEEE; 
+    background-size: cover;
+    background-position: center;
+    justify-content: space-between;
+    
+}
+
+.jc_left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+
+.jc_left-side h2 {
+    font-size: 64px;
+    color: #fff; 
+    font-family: 'Poppins', sans-serif;
+}
+
+.jc_total{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.jc_login-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 85%;
+    max-height: 500px;
+    width: 100%;
+    max-width: 390px;
+}
+
+.lc_area-inputs{
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.jc_login-box form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.lc_area-links{
+    display: flex;
+    width: 95%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.jc_login-box h3 {
+    height: 100px;
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif; 
+    color: #333; 
+    text-align: center;
+    font-weight: normal;
+}
+
+
+
+.jc_input-field {
+    width: 90%;
+    padding: 12px 14px;  
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid #CCCCCC; 
+    border-radius: 5px;
+    background-color: #F0EEEE;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+
+   
+}
+
+
+
+.jc_forgot-password {
+    font-size: 12px; 
+    color: #555;
+    /* margin-bottom: 20px;  */
+    justify-content: left;
+    text-decoration: none; 
+    font-family: 'Poppins', sans-serif;
+}
+
+.jc_forgot-password:hover {
+    color: var(--color-primary-7); 
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+.jc_login-btn {
+    width: 200px;
+    padding: 8px 10px ;
+    font-size: 15px;
+    background-color: #45734B;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center; 
+}
+
+.jc_menu-container-sup {
+    width: 100%;
+    height: 90px;
+    background-color: #EFEFEF;
+    border-bottom: 4PX solid #E7E6E6 ;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+   
+}
+
+.jc_nav-bar-menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.jc_nav-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 60px;
+    justify-content: center;
+    
+}
+
+.jc_nav-link {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 450;
+    font-family: "Poppins", sans-serif;
+}
+
+.jc_nav-link:hover {
+    color: var(--color-primary-7);
+    transition: 0.5s;
+}
+
+.jc_btn-button-padrao {
+    color: white;
+    background-color: #45734B;
+    padding: 10px 30px; 
+    font-size: 14px; 
+    border-radius: 8px; 
+    border: none; 
+}
+
+@media screen and (max-width: 1024px) {
+    .jc_login-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .jc_left-side {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .jc_left-side h2 {
+        font-size: 48px;
+    }
+
+    .jc_login-box {
+        width: 80%;
+        height: auto;
+        max-height: none;
+    }
+
+    .jc_nav-list {
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .jc_left-side h2 {
+        font-size: 36px;
+    }
+
+    .jc_login-box {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .jc_nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .jc_menu-container-sup {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .jc_btn-button-padrao {
+        width: 80%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .jc_left-side h2 {
+        font-size: 28px;
+        padding: 10px;
+    }
+
+    .jc_login-box {
+        width: 100%;
+        padding: 15px;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .jc_input-field {
+        width: 100%;
+    }
+
+    .jc_login-btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .jc_total {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .jc_nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .jc_menu-container-sup {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .jc_logo {
+        padding: 10px;
+        max-width: 130px;
+    }
+
+    .jc_btn-button-padrao {
+        width: 90%;
+        padding: 10px;
+        font-size: 15px;
+    }
+}
+
+
+/* @media screen and (max-width: 1024px) { 
+    .jc_login-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+   }
+
+    .jc_left-side {
+        width: 100%;
+        text-align: center;
+    }
+
+    .jc_left-side h2 {
+        font-size: 48px;
+    }
+
+    .jc_login-box {
+        width: 80%;
+        height: auto;
+    }
+
+    .jc_nav-list {
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .jc_left-side h2 {
+        font-size: 36px;
+    }
+
+    .jc_login-box {
+        width: 90%;
+    }
+
+    .jc_nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .jc_menu-container-sup {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .jc_left-side h2 {
+        font-size: 24px; 
+    }
+
+    .jc_login-box {
+        width: 100%;  
+        padding: 7px;
+    }
+
+    .jc_input-field {
+        width: 100%; 
+    }
+
+    .jc_login-btn {
+        width: 100%; 
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .jc_total {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .jc_left-side {
+        width: 100%;
+        text-align: center;
+    }
+
+    .jc_nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .jc_menu-container-sup {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .jc_logo {
+        padding: 10px;
+        max-width: 150px; 
+    }
+
+    .jc_btn-button-padrao {
+        width: 90%;
+    }
+} */

@@ -1,0 +1,17 @@
+.jc_center-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    max-width: 600px;
+}
+
+.jc_center-box form{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

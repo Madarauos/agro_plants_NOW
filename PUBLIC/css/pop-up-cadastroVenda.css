@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    font-family: Poppins;
+    padding: 0;
+    margin: 0;
+}
+
+.ym_form-pop-up{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    min-width: 25vw;
+    justify-content: space-around;
+    grid-template-columns: auto auto;
+}
+
+.ym_titulo-input{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.ym_area-input{
+    width: 100%;
+    gap: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ym_input-aviso{
+    font-size: 10px;
+    color: #00000099;
+    font-weight: 500;
+}
+
+.ym_pop-up-input{
+    padding: 2px;
+    border-radius: 7px;
+    border: 2px solid #E7E6E6;
+    height: 2rem;
+    width: 18rem;
+}
+
+.ym_pop-up-btn-submit{
+    background-color: #45734B;
+    color: white;
+    height: 2.3rem;
+    width: 10rem;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+}
+
+.ym_area-btn-submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 2;
+}
+
+.ym_form-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 1024px){
+
+}

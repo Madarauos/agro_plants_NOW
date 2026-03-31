@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f7f7f7;
+}
+
+
+.controle-popup {
+    display: none;
+}
+
+
+.jc_popup {
+    display: flex; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.jc_popup-conteudo {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.jc_popup-conteudo p {
+    font-size: 18px;
+    color: rgba(0,0,0, 0.5);
+    margin-bottom: 15px;
+}
+
+
+.jc_fechar-btn {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #45734B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.jc_controle-popup:checked + .popup {
+    display: flex;
+}
+
+.jc_controle-popup:not(:checked) + .popup {
+    display: none;
+}

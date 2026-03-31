@@ -1,0 +1,20 @@
+.ym_inferior-pop-up{
+    margin-left: 10px;
+    gap: 15px;
+    display: flex;
+    color: gray;
+    font-size: 18px;
+}  
+
+.ym_btn-pop-up{
+    color: black;
+    cursor: pointer;
+    padding: 2px 4px;
+    transition: all ease 0.5s;
+}
+
+.ym_btn-pop-up:hover{
+    background-color: rgba(128, 128, 128, 0.193);
+    border-radius: 3px;
+    transform: scale(1.1);
+}

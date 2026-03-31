@@ -1,0 +1,222 @@
+.ym_page{
+    background-color: #F0EEEE;
+    display: flex;
+}
+
+.ym_section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ym_area-table{
+    width: 95%;
+    height: 80%;
+    overflow: auto;
+    box-shadow: 3px 3px 10px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+}
+
+.ym_tabela{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    
+}   
+
+.ym_tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+
+.ym_thead{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    color: white;
+    background-color: #2d2d2d;
+    font-weight: 550;
+}
+
+.ym_th, .ym_td {
+    padding: 12px 15px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.ym_td{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.363);
+}
+
+.ym_area-table::-webkit-scrollbar{
+    background-color:white;
+    border-radius: 0px 20px 20px 0px;
+    border-left: 2px solid rgba(255, 255, 255, 0.471);
+    width: 11px;
+}
+
+.ym_area-table::-webkit-scrollbar-thumb{
+    background-color: rgb(186, 186, 186);
+    border-radius: 0px 20px 20px 0px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+
+    --color-primary-1: #FFFFFF; 
+    --color-primary-2: #F0EEEE; /*COR DO FUNDO DA TELA */
+    --color-primary-3: #F6F6F6; /*COR DOS OBJ DEPOIS DO FUNDO */
+    --color-primary-4: #F6F6F6; /*DOCK */
+    --color-primary-5: #E7E6E6; /*Stroke */
+    --color-primary-6: #45734B; /* Background Buttons */
+    --color-primary-7: #008F9F; /* cor hover palavras */
+    --color-icones-0:  #7F7F7F; /* Cor texto */
+
+    --color-status-1: #30AB46;
+    --color-status-2: #FF0000;
+    /* Usar apenas nas paginas de Relatório as cores de "status"*/
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+a{
+   text-decoration: none; 
+}
+
+body{
+    background-color: var(--color-primary-2);
+    
+}
+
+
+table td{
+    border-bottom: 1px solid rgb(209, 209, 209);
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 500;
+    color: var(--color-icones-0);
+}
+
+table th{
+    border-bottom: 1px solid rgb(209, 209, 209);
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 600;
+    color: #45734b;
+}
+
+.ym_area-table{
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+}
+
+.ym_td a{
+    color: var(--color-icones-0);
+}
+
+.ym_mobile-td{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 13px;
+    border-radius: 0px 0px 7px 7px;
+    color: #7F7F7F;
+}
+
+@media screen and (max-width: 768px) {
+
+    #ym_td-icon, #ym_th-icons{
+        display: none;
+    }
+
+    .ym_tabela {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    
+    .ym_area-table{
+        overflow: visible;
+    }
+
+    .ym_thead {
+        display: none;
+    }
+    
+    .ym_tabela tbody,
+    .ym_tabela th,
+    .ym_tabela td,
+    .ym_tabela tr {
+        display: block;
+    }
+
+    .ym_area-table{
+        height: 100%;
+        box-shadow: none;
+        background-color: none;
+        background-color: rgba(255, 255, 255, 0);
+        
+    }
+    
+    .ym_td{
+        border: none;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+        padding-left: 50%;
+    }
+    
+    .ym_tabela td:before {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+        content: attr(data-titulo);
+
+    }
+    
+    .ym_tbody td.sb_td:before {
+        color: var(--color-icones-0);
+    }
+
+    .ym_tbody td:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 45%;
+        height: 100%;
+        background-color: #ffffff;
+        content: attr(data-label);
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: #ddd 1px solid;
+    }
+    .ym_tr{
+        background-color: white;
+        margin-top: 15px;
+        overflow: hidden;
+        border-radius: 7px 7px 0px 0px;
+        box-shadow: 2px 2px 10px 0px rgba(9, 9, 9, 0.096);
+    }
+
+    .ym_mobile-td{
+        display: flex;
+    }
+
+}
